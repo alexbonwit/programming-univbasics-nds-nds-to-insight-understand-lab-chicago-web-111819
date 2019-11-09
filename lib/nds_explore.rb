@@ -11,9 +11,11 @@ end
 
 def print_first_directors_movie_titles
   binding.pry
-  # row_index = 0
-  # while row_index < directors_database.length do
-  #   puts 
-  # end
-  
+  counter = 0
+  stephen_spielberg = directors_database[0][:movies]
+  while counter < stephen_spielberg.length do
+    title = stephen_spielberg[counter][:title]
+    puts title
+    counter += 1
+  end
 end

@@ -10,7 +10,6 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  binding.pry
   counter = 0
   stephen_spielberg = directors_database[0][:movies]
   while counter < stephen_spielberg.length do
